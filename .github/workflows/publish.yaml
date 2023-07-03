@@ -19,3 +19,9 @@ jobs:
         uses: docker://ghcr.io/wivik/doc-as-code-example:latest
         with:
           args: "-o technical-architecture-document.odt --reference-doc=template/reference.odt --resource-path=.:content ${{ steps.content-files.outputs.CONTENT_FILES }} --standalone --toc --filter=filter/plantuml.py"
+
+      - name: Upload odt file
+        uses: actions/upload-artifact@v3
+        with:
+          name: odt-file
+          path: test.odt
