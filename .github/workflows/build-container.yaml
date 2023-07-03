@@ -37,5 +37,5 @@ jobs:
           push: true
           tags: "${{ env.REGISTRY }}/wivik/doc-as-code-example:${{ steps.changelog.outputs.tag }},${{ env.REGISTRY }}/wivik/doc-as-code-example:latest"
           labels: "${{ env.REGISTRY }}/wivik/doc-as-code-example:${{ steps.changelog.outputs.tag }},${{ env.REGISTRY }}/wivik/doc-as-code-example:latest"
-          file: Containerfile
+          file: Dockerfile
           context: container
