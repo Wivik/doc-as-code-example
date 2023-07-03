@@ -1,3 +1,12 @@
+## [0.2.2](https://github.com/Wivik/doc-as-code-example/compare/v0.2.1...v0.2.2) (2023-07-03)
+
+
+### Bug Fixes
+
+* container image ([1ed3bbb](https://github.com/Wivik/doc-as-code-example/commit/1ed3bbb45974a250125de5ade2d92b1336a703cf))
+
+
+
 ## [0.2.1](https://github.com/Wivik/doc-as-code-example/compare/v0.2.0...v0.2.1) (2023-07-03)
 
 
