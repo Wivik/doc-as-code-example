@@ -24,6 +24,6 @@ jobs:
         run: echo CONTENT_FILES=$(ls content/00-*.md content/01-*.md content/02-*.md) >> $GITHUB_OUTPUT
 
       - name: Write epub
-        uses: docker://pandoc/extra:latest
+        uses: docker://pandoc/extra:latest-ubuntu
         with:
           args: "-o technical-architecture-document.odt --reference-doc=template/reference.odt --resource-path=.:content ${{ steps.content-files.outputs.CONTENT_FILES }} --standalone --toc --filter=filter/plantuml.py"
