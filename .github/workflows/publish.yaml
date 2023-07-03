@@ -11,19 +11,18 @@ jobs:
       - name: Checkout content
         uses: actions/checkout@v3
 
-      - name: Build container image
-        uses: docker/build-push-action@v4
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v2
         with:
-          push: false
-          tags: "pandoc-custo:latest"
-          file: Dockerfile
-          context: container
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Fetch files in workspace
         id: content-files
         run: echo CONTENT_FILES=$(ls content/00-*.md content/01-*.md content/02-*.md) >> $GITHUB_OUTPUT
 
       - name: Write epub
-        uses: docker://pandoc-custo:latest
+        uses: docker://ghcr.io/wivik/doc-as-code-example:latest
         with:
           args: "-o technical-architecture-document.odt --reference-doc=template/reference.odt --resource-path=.:content ${{ steps.content-files.outputs.CONTENT_FILES }} --standalone --toc --filter=filter/plantuml.py"
