@@ -25,3 +25,4 @@ jobs:
         with:
           name: odt-file
           path: technical-architecture-document.odt
+          retention-days: 1
