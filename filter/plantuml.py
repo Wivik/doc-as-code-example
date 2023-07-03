@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 import os
 import sys
 from pandocfilters import toJSONFilter, Para, Image
