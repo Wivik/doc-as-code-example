@@ -1,0 +1,29 @@
+name: Publish the document
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout content
+        uses: actions/checkout@v3
+
+      - name: Setup python virtualenv
+        uses: actions/setup-python@v4
+        with:
+          cache: 'pip'
+
+      - name: Install requirements
+        run: pip install -r filter/requirements.txt
+
+      - name: Fetch files in workspace
+        id: content-files
+        run: echo CONTENT_FILES=$(ls content/00-*.md content/01-*.md content/02-*.md) >> $GITHUB_OUTPUT
+
+      - name: Write epub
+        uses: docker://pandoc/core:latest
+        with:
+          args: "-o technical-architecture-document.odt --reference-doc=template/reference.odt --resource-path=.:content ${{ steps.content-files.outputs.CONTENT_FILES }} --standalone --toc --filter=filter/plantuml.py"
