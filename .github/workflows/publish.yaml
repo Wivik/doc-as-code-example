@@ -19,9 +19,17 @@ jobs:
         id: revision
         with:
           version-file: './version_file.json'
-          output-file: 'content/02-02-revision-content.md'
+          output-file: false
           skip-commit: true
           skip-tag: true
+
+      - name: Write changelog
+        run: |
+          echo "## ${{ steps.revision.outputs.tag }}" > revision.md
+          git log $(git describe --tags --abbrev=0)..HEAD --pretty=format:"%h %an %aD %s" >> revision.md
+          echo "" revision.md
+          cat ./content/02-02-revision-content.md >> revision.md
+          cat revision.md > ./content/02-02-revision-content.md
 
       - name: Fetch files in workspace
         id: content-files
@@ -32,13 +40,12 @@ jobs:
         with:
           args: "-o technical-architecture-document.odt --reference-doc=template/reference.odt --resource-path=.:content ${{ steps.content-files.outputs.CONTENT_FILES }} --standalone --toc --filter=filter/plantuml.py"
 
-      - name: Bump version and create release
+      - name: Tag release
         uses: TriPSs/conventional-changelog-action@v3.19.0
         id: changelog
         with:
           github-token: ${{ secrets.github_token }}
           skip-version-file: true
-          input-file: 'content/02-02-revision-content.md'
 
       - name: Publish release
         uses: softprops/action-gh-release@v1
