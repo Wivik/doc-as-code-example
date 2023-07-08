@@ -32,6 +32,7 @@ jobs:
           cat ./content/02-02-revision-content.md >> revision.md
           echo "" >> revision.md
           cat revision.md > ./content/02-02-revision-content.md
+          rm revision.md
 
       - name: Fetch files in workspace
         id: content-files
