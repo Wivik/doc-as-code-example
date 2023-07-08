@@ -1,3 +1,12 @@
+# [0.5.0](https://github.com/Wivik/doc-as-code-example/compare/v0.4.0...v0.5.0) (2023-07-08)
+
+
+### Features
+
+* change revision generation ([3d40a35](https://github.com/Wivik/doc-as-code-example/commit/3d40a353d2d57b036fed0f7b71d37e0ec143e636))
+
+
+
 # [0.4.0](https://github.com/Wivik/doc-as-code-example/compare/v0.3.1...v0.4.0) (2023-07-08)
 
 
@@ -37,15 +46,6 @@
 ### Bug Fixes
 
 * container image ([81f1c7c](https://github.com/Wivik/doc-as-code-example/commit/81f1c7cbc7e42c347ea6d628104d48d8e00ae7ef))
-
-
-
-## [0.2.2](https://github.com/Wivik/doc-as-code-example/compare/v0.2.1...v0.2.2) (2023-07-03)
-
-
-### Bug Fixes
-
-* container image ([1ed3bbb](https://github.com/Wivik/doc-as-code-example/commit/1ed3bbb45974a250125de5ade2d92b1336a703cf))
 
 
 
