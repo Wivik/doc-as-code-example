@@ -1,3 +1,12 @@
+## v0.10.0
+
+- 3121952 Wivik Sat, 8 Jul 2023 17:18:05 +0200 feat: update workflow
+- e1515eb Wivik Sat, 8 Jul 2023 17:15:12 +0200 feat: update workflow
+- 2d573a2 Wivik Sat, 8 Jul 2023 17:14:39 +0200 feat: update workflow
+- fecd8cd Wivik Sat, 8 Jul 2023 17:08:47 +0200 feat: update workflow
+- 9031050 Wivik Sat, 8 Jul 2023 16:58:44 +0200 BREAKING CHANGE: moved container and template to dedicated repo
+
+
 ## v0.9.0
 
 - 7bb930c Wivik Sat, 8 Jul 2023 16:55:16 +0200 feat: removed info about five last
@@ -27,6 +36,8 @@
 
 - f5629f1 Wivik Sat, 8 Jul 2023 16:33:58 +0200 feat: change revision generation
 - 66f24c6 Wivik Sat, 8 Jul 2023 12:22:17 +0200 ci: add version on action
+
+
 
 
 

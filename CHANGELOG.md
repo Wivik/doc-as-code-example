@@ -1,3 +1,15 @@
+# [0.10.0](https://github.com/Wivik/doc-as-code-example/compare/v0.9.0...v0.10.0) (2023-07-08)
+
+
+### Features
+
+* update workflow ([3121952](https://github.com/Wivik/doc-as-code-example/commit/3121952aca56037d26041fbd918af310266c7b81))
+* update workflow ([e1515eb](https://github.com/Wivik/doc-as-code-example/commit/e1515ebe55cd838e4098456c9cf3927a2cf4a6b2))
+* update workflow ([2d573a2](https://github.com/Wivik/doc-as-code-example/commit/2d573a21a456dee94768cd26c01c435fa329f814))
+* update workflow ([fecd8cd](https://github.com/Wivik/doc-as-code-example/commit/fecd8cda25c52ab79a1b1067df0d687513337840))
+
+
+
 # [0.9.0](https://github.com/Wivik/doc-as-code-example/compare/v0.8.0...v0.9.0) (2023-07-08)
 
 
@@ -33,15 +45,6 @@
 
 * change revision generation ([d715470](https://github.com/Wivik/doc-as-code-example/commit/d715470b31b9214adf5c6dc2ac44e30099f96ba2))
 * change revision generation ([57ddab0](https://github.com/Wivik/doc-as-code-example/commit/57ddab06dadfbb200baf647a59707dfe5bb7e218))
-
-
-
-# [0.5.0](https://github.com/Wivik/doc-as-code-example/compare/v0.4.0...v0.5.0) (2023-07-08)
-
-
-### Features
-
-* change revision generation ([3d40a35](https://github.com/Wivik/doc-as-code-example/commit/3d40a353d2d57b036fed0f7b71d37e0ec143e636))
 
 
 
