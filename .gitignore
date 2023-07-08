@@ -159,12 +159,12 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-## Data folder
-data/*
-log/*
-story/*
-scripts/*.db
-
 *.md.backup
 
 .vscode/
+
+## ignore odt, puml and png files
+
+*.puml
+*.png
+*.odt
