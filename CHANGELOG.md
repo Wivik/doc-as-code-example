@@ -1,3 +1,17 @@
+# [0.3.0](https://github.com/Wivik/doc-as-code-example/compare/v0.2.3...v0.3.0) (2023-07-08)
+
+
+### Bug Fixes
+
+* container image ([32e79e4](https://github.com/Wivik/doc-as-code-example/commit/32e79e4b50272096129d5a3bbfb9538386c3acfe))
+
+
+### Features
+
+* remodeled repository ([2426fdf](https://github.com/Wivik/doc-as-code-example/commit/2426fdf0d5e7d2358feae2a1b54cac6976daf193))
+
+
+
 ## [0.2.3](https://github.com/Wivik/doc-as-code-example/compare/v0.2.2...v0.2.3) (2023-07-03)
 
 
