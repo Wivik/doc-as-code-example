@@ -14,12 +14,11 @@ jobs:
       - name: Checkout content
         uses: actions/checkout@v3
 
-      - name: Get template
-        uses: andy-v-h/get-release-asset-action@master
+      - name: Checkout reference
+        uses: actions/checkout@v3
         with:
-          repo: Wivik/doc-as-code-template
-          match: "reference.odt"
-          rename: reference.odt
+          repository: Wivik/doc-as-code-template
+          path: template
 
       - name: Produce changelog
         uses: TriPSs/conventional-changelog-action@v3.19.0
@@ -51,7 +50,7 @@ jobs:
       - name: Write epub
         uses: docker://ghcr.io/wivik/doc-as-code-template:latest
         with:
-          args: "-o technical-architecture-document.odt --reference-doc=reference.odt --resource-path=.:content ${{ steps.content-files.outputs.CONTENT_FILES }} --standalone --toc --filter=filter/plantuml.py"
+          args: "-o technical-architecture-document.odt --reference-doc=template/template/reference.odt --resource-path=.:content ${{ steps.content-files.outputs.CONTENT_FILES }} --standalone --toc --filter=template/filter/plantuml.py"
 
       - name: Tag release
         uses: TriPSs/conventional-changelog-action@v3.19.0

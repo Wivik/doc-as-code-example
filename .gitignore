@@ -169,4 +169,4 @@ cython_debug/
 *.png
 *.odt
 
-reference.odt
+template/
