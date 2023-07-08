@@ -2,7 +2,9 @@
 
 - a5c5021 Wivik Sat, 8 Jul 2023 16:41:17 +0200 feat: change revision generation
 - 7a035db Wivik Sat, 8 Jul 2023 16:40:30 +0200 feat: change revision generation
+
 ## v0.6.0
+
 - d715470 Wivik Sat, 8 Jul 2023 16:39:06 +0200 feat: change revision generation
 - 57ddab0 Wivik Sat, 8 Jul 2023 16:38:49 +0200 feat: change revision generation
 
