@@ -1,3 +1,12 @@
+# [0.9.0](https://github.com/Wivik/doc-as-code-example/compare/v0.8.0...v0.9.0) (2023-07-08)
+
+
+### Features
+
+* removed info about five last ([7bb930c](https://github.com/Wivik/doc-as-code-example/commit/7bb930c8c7787afbf26b9b5e947091e2da0b1289))
+
+
+
 # [0.8.0](https://github.com/Wivik/doc-as-code-example/compare/v0.7.0...v0.8.0) (2023-07-08)
 
 
@@ -33,15 +42,6 @@
 ### Features
 
 * change revision generation ([3d40a35](https://github.com/Wivik/doc-as-code-example/commit/3d40a353d2d57b036fed0f7b71d37e0ec143e636))
-
-
-
-# [0.4.0](https://github.com/Wivik/doc-as-code-example/compare/v0.3.1...v0.4.0) (2023-07-08)
-
-
-### Features
-
-* change revision generation ([f5629f1](https://github.com/Wivik/doc-as-code-example/commit/f5629f1fa30ee349757764f156e8a770aca11ab3))
 
 
 

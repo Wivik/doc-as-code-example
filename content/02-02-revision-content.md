@@ -1,3 +1,9 @@
+## v0.9.0
+
+- 7bb930c Wivik Sat, 8 Jul 2023 16:55:16 +0200 feat: removed info about five last
+- e48ab12 Wivik Sat, 8 Jul 2023 16:52:21 +0200 fix removed info about five last
+
+
 ## v0.8.0
 
 - 3230f44 Wivik Sat, 8 Jul 2023 16:45:01 +0200 fix removed info about five last
@@ -21,6 +27,8 @@
 
 f5629f1 Wivik Sat, 8 Jul 2023 16:33:58 +0200 feat: change revision generation
 66f24c6 Wivik Sat, 8 Jul 2023 12:22:17 +0200 ci: add version on action
+
+
 
 
 
