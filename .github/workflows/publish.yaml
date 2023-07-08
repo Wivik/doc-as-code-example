@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Produce changelog
-        uses: TriPSs/conventional-changelog-action@v3
+        uses: TriPSs/conventional-changelog-action@v3.19.0
         id: revision
         with:
           version-file: './version_file.json'
@@ -33,12 +33,12 @@ jobs:
           args: "-o technical-architecture-document.odt --reference-doc=template/reference.odt --resource-path=.:content ${{ steps.content-files.outputs.CONTENT_FILES }} --standalone --toc --filter=filter/plantuml.py"
 
       - name: Bump version and create release
-        uses: TriPSs/conventional-changelog-action@v3
+        uses: TriPSs/conventional-changelog-action@v3.19.0
         id: changelog
         with:
           github-token: ${{ secrets.github_token }}
           skip-version-file: true
-          input-file: 'content/02-revision.md'
+          input-file: 'content/02-02-revision-content.md'
 
       - name: Publish release
         uses: softprops/action-gh-release@v1
