@@ -14,6 +14,13 @@ jobs:
       - name: Checkout content
         uses: actions/checkout@v3
 
+      - name: Get template
+        uses: houqp/download-release-assets@v1
+        with:
+          repo: Wivik/doc-as-code-template
+          match: "reference.odt"
+          rename: reference.odt
+
       - name: Produce changelog
         uses: TriPSs/conventional-changelog-action@v3.19.0
         id: revision
@@ -42,9 +49,9 @@ jobs:
         run: echo CONTENT_FILES=$(ls content/00-*.md content/01-*.md content/02-*.md) >> $GITHUB_OUTPUT
 
       - name: Write epub
-        uses: docker://ghcr.io/wivik/doc-as-code-example:latest
+        uses: docker://ghcr.io/wivik/doc-as-code-template:latest
         with:
-          args: "-o technical-architecture-document.odt --reference-doc=template/reference.odt --resource-path=.:content ${{ steps.content-files.outputs.CONTENT_FILES }} --standalone --toc --filter=filter/plantuml.py"
+          args: "-o technical-architecture-document.odt --reference-doc=reference.odt --resource-path=.:content ${{ steps.content-files.outputs.CONTENT_FILES }} --standalone --toc --filter=filter/plantuml.py"
 
       - name: Tag release
         uses: TriPSs/conventional-changelog-action@v3.19.0
