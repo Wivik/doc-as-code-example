@@ -1,3 +1,13 @@
+## [0.3.1](https://github.com/Wivik/doc-as-code-example/compare/v0.3.0...v0.3.1) (2023-07-08)
+
+
+### Bug Fixes
+
+* add header to revision ([a824121](https://github.com/Wivik/doc-as-code-example/commit/a824121c989b09778140539b1449195177127986))
+* removed puml, odt and png files ([661794c](https://github.com/Wivik/doc-as-code-example/commit/661794c108d78c4a9c0f38e4cd43e99513a6aa4f))
+
+
+
 # [0.3.0](https://github.com/Wivik/doc-as-code-example/compare/v0.2.3...v0.3.0) (2023-07-08)
 
 
@@ -36,15 +46,6 @@
 ### Bug Fixes
 
 * container image ([dc2f1d0](https://github.com/Wivik/doc-as-code-example/commit/dc2f1d0bed0656188d8a56ba541048484deea330))
-
-
-
-# [0.2.0](https://github.com/Wivik/doc-as-code-example/compare/84771f9c26b99b51bd73bc568ba99e31cde9a9f8...v0.2.0) (2023-07-03)
-
-
-### Features
-
-* container image ([84771f9](https://github.com/Wivik/doc-as-code-example/commit/84771f9c26b99b51bd73bc568ba99e31cde9a9f8))
 
 
 
