@@ -26,11 +26,11 @@ jobs:
       - name: Write changelog
         run: |
           echo "## ${{ steps.revision.outputs.tag }}" > revision.md
-          echo "" revision.md
+          echo "" >> revision.md
           git log $(git describe --tags --abbrev=0)..HEAD --pretty=format:"- %h %an %aD %s" >> revision.md
-          echo "" revision.md
+          echo "" >> revision.md
           cat ./content/02-02-revision-content.md >> revision.md
-          echo "" revision.md
+          echo "" >> revision.md
           cat revision.md > ./content/02-02-revision-content.md
 
       - name: Fetch files in workspace
