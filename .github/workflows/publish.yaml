@@ -19,7 +19,7 @@ jobs:
         id: revision
         with:
           version-file: './version_file.json'
-          output-file: 'content/02-revision.md'
+          output-file: 'content/02-02-revision-content.md'
           skip-commit: true
           skip-tag: true
 
